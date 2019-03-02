@@ -1,0 +1,20 @@
+{
+  "connection": {
+    "user": "admin",
+    "pass": "password",
+    "server": "localhost",
+    "vhost": "/test-app"
+  },
+
+  "exchanges":[
+    {"name": "rpc-req-ex", "type": "direct"}
+  ],
+
+  "queues":[
+    {"name": "rpc-req-q"}
+  ],
+
+  "bindings":[
+    {"exchange": "rpc-req-ex", "target": "rpc-req-q"}
+  ]
+}

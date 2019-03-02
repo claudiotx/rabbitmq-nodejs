@@ -1,0 +1,20 @@
+{
+  "connection": {
+    "user": "admin",
+    "pass": "password",
+    "server": "localhost",
+    "vhost": "/test-app"
+  },
+
+  "exchanges":[
+    {"name": "crypto-ex.1", "type": "direct"}
+  ],
+
+  "queues":[
+    {"name": "crypto-q.1"}
+  ],
+
+  "bindings":[
+    {"exchange": "crypto-ex.1", "target": "crypto-q.1"}
+  ]
+}
